@@ -44,7 +44,7 @@ async function addContact(name, email, phone) {
   try {
     const contactList = await listContacts();
     contactList.push({
-      id: Math.floor(Math.random() * 100 + 1),
+      id: JSON.stringify(Math.floor(Math.random() * 100 + 1)),
       name,
       email,
       phone,
